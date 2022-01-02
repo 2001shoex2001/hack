@@ -1,65 +1,54 @@
-* {
-padding:0;
-margin:0
-}
-
-body,html {
-height:100%
-}
-
-body {
-background-color:#20B2AA;
-margin:0 auto;
-text-align:center;
-width:100%;
-font-family:'Roboto Condensed',sans-serif;
-color:#fff;
-font-weight:300;
-line-height:28px;
-font-size:19px;
-font-weight:700
-}
-
-#wrapper {
-padding:0 15px;
-height:100%;
-display:flex
-}
-
-.content {
-align-self:center;
-margin:0 auto
-}
-
-.content__btn {
-font-size:20px;
-border:3px solid #000;
-color:#000;
-text-decoration:none;
-border-radius:100em;
-padding:20px 40px;
-letter-spacing:.05em;
-position:relative;
-transition:.3s
-}
-
-.content__btn::before {
-content:'';
-border:3px solid #FFC0CB;
-width:100%;
-height:100%;
-position:absolute;
-left:3px;
-top:2px;
-border-radius:100em;
-background:#FFC0CB;
-z-index:-1;
-transition:.3s
-}
-
-.content__btn:hover::before {
-left:0;
-top:0;
-width:calc(100% - 6px);
-height:calc(100% - 6px)
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework-01</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">lifestyle</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">photodiary</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">music</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">travel</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                    <img src="./img/woman.png" alt="Женщина" width="420">
+                    <p>lifestyle</p>
+                    <h2>More than just a music festival </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </article>
+            
+            <article>
+                    <img src="./img/coffe.png" alt="Чашка кофе" width="420">
+                    <p>lifestyle</p>
+                    <h2>Life tastes better with coffee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </article>
+        
+            <article>
+                    <img src="./img/girls.png" alt="Девушки" width="420">
+                    <p>photodiary</p>
+                    <h2>American dream</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            </article>
+            
+            <article>
+                    <img src="./img/boy.png" alt="Парень" width="420">
+                    <p>photodiary</p>
+                    <h2>A day exploring the Alps</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+             </article>
+            
+             <button class="btn-footer">load more</button>
+         </main>            
+     </div>
+</body>
+</html>
